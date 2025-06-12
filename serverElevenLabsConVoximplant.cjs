@@ -64,16 +64,16 @@ wssVox.on('connection', (wsVox) => {
 
     elevenLabsWs.on('open', () => {
         console.log(`✅ Conectado a ElevenL WebSocket para el room ${roomId}`);
-        const initMsg = {
-            "type": "conversation_initiation_client_data",
-            "dynamic_variables": {
-                "name": `Juan David`,
-                "celular": "573028571257",
-                "mail": "jdjimenezle@gmail.com",
-                "interes": "Ha mostrado interés inicial en Salinas del Sol, específicamente del apartamento tipo C, pero aún no ha tomado ninguna decisión"
-            }
-        };
-        elevenLabsWs.send(JSON.stringify(initMsg)); // Enviamos el mensaje de inicio de conversación con datos del cliente
+        // const initMsg = {
+        //     "type": "conversation_initiation_client_data",
+        //     "dynamic_variables": {
+        //         "name": `Juan David`,
+        //         "celular": "573028571257",
+        //         "mail": "jdjimenezle@gmail.com",
+        //         "interes": "Ha mostrado interés inicial en Salinas del Sol, específicamente del apartamento tipo C, pero aún no ha tomado ninguna decisión"
+        //     }
+        // };
+        // elevenLabsWs.send(JSON.stringify(initMsg)); // Enviamos el mensaje de inicio de conversación con datos del cliente
     });
 
 
